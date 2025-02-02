@@ -17,9 +17,22 @@ public class Main {
         System.out.println(Arrays.toString(doubleArray));
         System.out.println(Arrays.toString(arbitrarily));
         System.out.println("\nTask 3");
-        System.out.println(numbers[2] + "," + numbers[1] + "," + numbers[0]);
-        System.out.println(doubleArray[2] + ";" + doubleArray[1] + "," + doubleArray[0]);
-        System.out.println(arbitrarily[2] + "," + arbitrarily[1] + "," + arbitrarily[0]);
+        int[] numbers1 = {1, 2, 3};
+        double[] doubleArray1 = {1.57, 7.654, 9.986};
+        for (int i = numbers1.length - 1; i >= 0; i--) {
+            System.out.print(numbers1[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = doubleArray1.length - 1; i >= 0; i--) {
+            System.out.print(doubleArray[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+
         System.out.println("\nTask 4");
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 != 0) {
@@ -29,4 +42,6 @@ public class Main {
         System.out.println(Arrays.toString(numbers));
     }
 }
+
+
 
